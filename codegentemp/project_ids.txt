@@ -1,0 +1,12 @@
+C:\Users\rad1an\Downloads\psoc-1-opyr_husiev\Lab_2_7SEG.cydsn\Lab_2_7SEG.cyprj|eb4ff9ba-1167-4be9-a07a-2b1248759bee
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|1406fc4e-7ffa-442e-9f8a-c4c802e6a462
+C:\Users\rad1an\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|f195b689-e51e-4733-accc-3b0b2233767c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|704bd5e4-c497-4923-a338-8b49c93d46fc
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|e7611472-fe24-472a-aaae-35598e1a5818
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|dfa65622-021a-4106-a276-cff10aafac62
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|9b4f4419-d416-49cc-ad14-5ff65dc2b4e1
+C:\Users\rad1an\Downloads\psoc-1-opyr_husiev\Lab_3_2_UART_Led.cydsn\Lab_3_2_UART_Led.cyprj|fb1bfbf8-8b8f-4de1-ad53-87ee1dfeae31
+C:\Users\rad1an\Downloads\psoc-1-opyr_husiev\Lab_3_1_UART_Transmitting.cydsn\Lab_3_1_UART_Transmitting.cyprj|7b908bc3-cbc0-403a-858d-46e5756c62c6
+C:\Users\rad1an\Downloads\psoc-1-opyr_husiev\Lab_1_3_LED.cydsn\Lab_1_3_LED.cyprj|fee47749-a563-4c2e-a71e-e865a2e18365
+C:\Users\rad1an\Downloads\psoc-1-opyr_husiev\Lab_1_2_LED.cydsn\Lab_1_2_LED.cyprj|2eed4d28-6750-4ca9-a07a-623f621a8747
+C:\Users\rad1an\Downloads\psoc-1-opyr_husiev\Lab_1_1_LED.cydsn\Lab_1_1_LED.cyprj|e1321e04-3cdb-4e58-94b9-48edcc9af290

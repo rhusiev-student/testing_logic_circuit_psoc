@@ -1,0 +1,1603 @@
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.isr_100Hz,"ax",%progbits
+  20              		.align	2
+  21              		.global	isr_100Hz
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	isr_100Hz, %function
+  25              	isr_100Hz:
+  26              	.LFB35:
+  27              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        ****  */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** 
+  14:main.c        **** void out7seg(int16, uint8);
+  15:main.c        **** 
+  16:main.c        **** uint16 indyk[4] = {0x10FF, 0x20FF, 0x40FF, 0x80FF};
+  17:main.c        **** const uint8 KOD7[10] = {0x03, 0x9F, 0x25, 0x0D, 0x99,
+  18:main.c        ****                         0x49, 0x41, 0x1F, 0x01, 0x09};
+  19:main.c        **** const uint8 MINUS = 0xFD;
+  20:main.c        **** 
+  21:main.c        **** CY_ISR(isr_100Hz) {
+  28              		.loc 1 21 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 10B5     		push	{r4, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 4, -8
+  35              		.cfi_offset 14, -4
+  22:main.c        ****   static uint8 N_indyk = 0u;
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 2
+
+
+  23:main.c        **** 
+  24:main.c        ****   SPIM_WriteTxData(indyk[N_indyk]);
+  36              		.loc 1 24 0
+  37 0002 064C     		ldr	r4, .L2
+  38 0004 2378     		ldrb	r3, [r4]
+  39 0006 5B00     		lsls	r3, r3, #1
+  40 0008 054A     		ldr	r2, .L2+4
+  41 000a 985A     		ldrh	r0, [r3, r2]
+  42 000c FFF7FEFF 		bl	SPIM_WriteTxData
+  43              	.LVL0:
+  25:main.c        **** 
+  26:main.c        ****   N_indyk++;
+  44              		.loc 1 26 0
+  45 0010 2378     		ldrb	r3, [r4]
+  46 0012 0133     		adds	r3, r3, #1
+  27:main.c        ****   N_indyk &= 3;
+  47              		.loc 1 27 0
+  48 0014 0322     		movs	r2, #3
+  49 0016 1340     		ands	r3, r2
+  50 0018 2370     		strb	r3, [r4]
+  28:main.c        **** }
+  51              		.loc 1 28 0
+  52              		@ sp needed
+  53 001a 10BD     		pop	{r4, pc}
+  54              	.L3:
+  55              		.align	2
+  56              	.L2:
+  57 001c 00000000 		.word	.LANCHOR1
+  58 0020 00000000 		.word	.LANCHOR0
+  59              		.cfi_endproc
+  60              	.LFE35:
+  61              		.size	isr_100Hz, .-isr_100Hz
+  62              		.global	__aeabi_idivmod
+  63              		.global	__aeabi_idiv
+  64              		.section	.text.out7seg,"ax",%progbits
+  65              		.align	2
+  66              		.global	out7seg
+  67              		.code	16
+  68              		.thumb_func
+  69              		.type	out7seg, %function
+  70              	out7seg:
+  71              	.LFB36:
+  29:main.c        **** 
+  30:main.c        **** void out7seg(int16 data, uint8 point_location) {
+  72              		.loc 1 30 0
+  73              		.cfi_startproc
+  74              		@ args = 0, pretend = 0, frame = 0
+  75              		@ frame_needed = 0, uses_anonymous_args = 0
+  76              	.LVL1:
+  77 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+  78              		.cfi_def_cfa_offset 24
+  79              		.cfi_offset 3, -24
+  80              		.cfi_offset 4, -20
+  81              		.cfi_offset 5, -16
+  82              		.cfi_offset 6, -12
+  83              		.cfi_offset 7, -8
+  84              		.cfi_offset 14, -4
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 3
+
+
+  85 0002 5F46     		mov	r7, fp
+  86 0004 5646     		mov	r6, r10
+  87 0006 4D46     		mov	r5, r9
+  88 0008 4446     		mov	r4, r8
+  89 000a F0B4     		push	{r4, r5, r6, r7}
+  90              		.cfi_def_cfa_offset 40
+  91              		.cfi_offset 8, -40
+  92              		.cfi_offset 9, -36
+  93              		.cfi_offset 10, -32
+  94              		.cfi_offset 11, -28
+  95 000c 8146     		mov	r9, r0
+  96 000e 8846     		mov	r8, r1
+  31:main.c        ****   uint8 i;
+  32:main.c        ****   uint8 sign = data < 0;
+  97              		.loc 1 32 0
+  98 0010 C30F     		lsrs	r3, r0, #31
+  99 0012 9A46     		mov	r10, r3
+ 100              	.LVL2:
+  33:main.c        ****   if (data < 0)
+ 101              		.loc 1 33 0
+ 102 0014 0028     		cmp	r0, #0
+ 103 0016 02DA     		bge	.L13
+  34:main.c        ****     data = -data;
+ 104              		.loc 1 34 0
+ 105 0018 4542     		rsbs	r5, r0, #0
+ 106 001a 2DB2     		sxth	r5, r5
+ 107              	.LVL3:
+ 108 001c 00E0     		b	.L5
+ 109              	.LVL4:
+ 110              	.L13:
+ 111 001e 0500     		movs	r5, r0
+ 112              	.LVL5:
+ 113              	.L5:
+ 114 0020 0024     		movs	r4, #0
+ 115 0022 1AE0     		b	.L6
+ 116              	.LVL6:
+ 117              	.L8:
+  35:main.c        ****   for (i = 0; i < 4 - sign; i++) {
+  36:main.c        ****     indyk[i] &= 0xFF00;
+ 118              		.loc 1 36 0
+ 119 0024 244F     		ldr	r7, .L14
+ 120 0026 6300     		lsls	r3, r4, #1
+ 121 0028 9B46     		mov	fp, r3
+ 122 002a DE5B     		ldrh	r6, [r3, r7]
+ 123 002c FF23     		movs	r3, #255
+ 124 002e 9E43     		bics	r6, r3
+ 125 0030 5B46     		mov	r3, fp
+ 126 0032 DE53     		strh	r6, [r3, r7]
+  37:main.c        ****     indyk[i] |= (uint16)KOD7[data % 10];
+ 127              		.loc 1 37 0
+ 128 0034 0A21     		movs	r1, #10
+ 129 0036 2800     		movs	r0, r5
+ 130 0038 FFF7FEFF 		bl	__aeabi_idivmod
+ 131              	.LVL7:
+ 132 003c 09B2     		sxth	r1, r1
+ 133 003e 1F4B     		ldr	r3, .L14+4
+ 134 0040 5B5C     		ldrb	r3, [r3, r1]
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 4
+
+
+ 135 0042 1E43     		orrs	r6, r3
+ 136 0044 5B46     		mov	r3, fp
+ 137 0046 DE53     		strh	r6, [r3, r7]
+  38:main.c        ****     data /= 10;
+ 138              		.loc 1 38 0
+ 139 0048 0A21     		movs	r1, #10
+ 140 004a 2800     		movs	r0, r5
+ 141 004c FFF7FEFF 		bl	__aeabi_idiv
+ 142              	.LVL8:
+ 143 0050 05B2     		sxth	r5, r0
+ 144              	.LVL9:
+  39:main.c        ****     if (data == 0)
+ 145              		.loc 1 39 0
+ 146 0052 002D     		cmp	r5, #0
+ 147 0054 06D0     		beq	.L7
+  35:main.c        ****     indyk[i] &= 0xFF00;
+ 148              		.loc 1 35 0 discriminator 2
+ 149 0056 0134     		adds	r4, r4, #1
+ 150              	.LVL10:
+ 151 0058 E4B2     		uxtb	r4, r4
+ 152              	.LVL11:
+ 153              	.L6:
+  35:main.c        ****     indyk[i] &= 0xFF00;
+ 154              		.loc 1 35 0 is_stmt 0 discriminator 1
+ 155 005a 0423     		movs	r3, #4
+ 156 005c 5246     		mov	r2, r10
+ 157 005e 9B1A     		subs	r3, r3, r2
+ 158 0060 9C42     		cmp	r4, r3
+ 159 0062 DFDB     		blt	.L8
+ 160              	.L7:
+  40:main.c        ****       break;
+  41:main.c        ****   }
+  42:main.c        ****   if (sign) {
+ 161              		.loc 1 42 0 is_stmt 1
+ 162 0064 4B46     		mov	r3, r9
+ 163 0066 002B     		cmp	r3, #0
+ 164 0068 09DA     		bge	.L9
+  43:main.c        ****     i++;
+ 165              		.loc 1 43 0
+ 166 006a 0134     		adds	r4, r4, #1
+ 167              	.LVL12:
+ 168 006c E4B2     		uxtb	r4, r4
+ 169              	.LVL13:
+  44:main.c        ****     indyk[i] &= 0xFF00;
+ 170              		.loc 1 44 0
+ 171 006e 1249     		ldr	r1, .L14
+ 172 0070 6000     		lsls	r0, r4, #1
+ 173 0072 435A     		ldrh	r3, [r0, r1]
+ 174 0074 FF22     		movs	r2, #255
+ 175 0076 9343     		bics	r3, r2
+  45:main.c        ****     indyk[i] |= (uint16)MINUS;
+ 176              		.loc 1 45 0
+ 177 0078 FD22     		movs	r2, #253
+ 178 007a 1343     		orrs	r3, r2
+ 179 007c 4352     		strh	r3, [r0, r1]
+ 180              	.L9:
+  46:main.c        ****   }
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 5
+
+
+  47:main.c        **** 
+  48:main.c        ****   for (i++; i < 4; i++) {
+ 181              		.loc 1 48 0
+ 182 007e 0134     		adds	r4, r4, #1
+ 183              	.LVL14:
+ 184 0080 E4B2     		uxtb	r4, r4
+ 185              	.LVL15:
+ 186 0082 07E0     		b	.L10
+ 187              	.L11:
+  49:main.c        ****     indyk[i] |= 0x00FF;
+ 188              		.loc 1 49 0 discriminator 3
+ 189 0084 0C4A     		ldr	r2, .L14
+ 190 0086 6100     		lsls	r1, r4, #1
+ 191 0088 885A     		ldrh	r0, [r1, r2]
+ 192 008a FF23     		movs	r3, #255
+ 193 008c 0343     		orrs	r3, r0
+ 194 008e 8B52     		strh	r3, [r1, r2]
+  48:main.c        ****     indyk[i] |= 0x00FF;
+ 195              		.loc 1 48 0 discriminator 3
+ 196 0090 0134     		adds	r4, r4, #1
+ 197              	.LVL16:
+ 198 0092 E4B2     		uxtb	r4, r4
+ 199              	.LVL17:
+ 200              	.L10:
+  48:main.c        ****     indyk[i] |= 0x00FF;
+ 201              		.loc 1 48 0 is_stmt 0 discriminator 1
+ 202 0094 032C     		cmp	r4, #3
+ 203 0096 F5D9     		bls	.L11
+  50:main.c        ****   }
+  51:main.c        **** 
+  52:main.c        ****   if (point_location <= 4) {
+ 204              		.loc 1 52 0 is_stmt 1
+ 205 0098 4346     		mov	r3, r8
+ 206 009a 042B     		cmp	r3, #4
+ 207 009c 05D8     		bhi	.L4
+  53:main.c        ****     indyk[point_location] ^= 0x01;
+ 208              		.loc 1 53 0
+ 209 009e 064A     		ldr	r2, .L14
+ 210 00a0 5F00     		lsls	r7, r3, #1
+ 211 00a2 B95A     		ldrh	r1, [r7, r2]
+ 212 00a4 0123     		movs	r3, #1
+ 213 00a6 4B40     		eors	r3, r1
+ 214 00a8 BB52     		strh	r3, [r7, r2]
+ 215              	.L4:
+  54:main.c        ****   }
+  55:main.c        **** }
+ 216              		.loc 1 55 0
+ 217              		@ sp needed
+ 218              	.LVL18:
+ 219              	.LVL19:
+ 220              	.LVL20:
+ 221 00aa 3CBC     		pop	{r2, r3, r4, r5}
+ 222 00ac 9046     		mov	r8, r2
+ 223 00ae 9946     		mov	r9, r3
+ 224 00b0 A246     		mov	r10, r4
+ 225 00b2 AB46     		mov	fp, r5
+ 226 00b4 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 6
+
+
+ 227              	.L15:
+ 228 00b6 C046     		.align	2
+ 229              	.L14:
+ 230 00b8 00000000 		.word	.LANCHOR0
+ 231 00bc 00000000 		.word	.LANCHOR2
+ 232              		.cfi_endproc
+ 233              	.LFE36:
+ 234              		.size	out7seg, .-out7seg
+ 235              		.section	.text.main,"ax",%progbits
+ 236              		.align	2
+ 237              		.global	main
+ 238              		.code	16
+ 239              		.thumb_func
+ 240              		.type	main, %function
+ 241              	main:
+ 242              	.LFB37:
+  56:main.c        **** 
+  57:main.c        **** 
+  58:main.c        **** int main() {
+ 243              		.loc 1 58 0
+ 244              		.cfi_startproc
+ 245              		@ args = 0, pretend = 0, frame = 32
+ 246              		@ frame_needed = 0, uses_anonymous_args = 0
+ 247 0000 70B5     		push	{r4, r5, r6, lr}
+ 248              		.cfi_def_cfa_offset 16
+ 249              		.cfi_offset 4, -16
+ 250              		.cfi_offset 5, -12
+ 251              		.cfi_offset 6, -8
+ 252              		.cfi_offset 14, -4
+ 253 0002 88B0     		sub	sp, sp, #32
+ 254              		.cfi_def_cfa_offset 48
+  59:main.c        ****   int OUTPUTS[8] = {0, 1, 0, 0, 0, 1, 1, 0};
+ 255              		.loc 1 59 0
+ 256 0004 6A46     		mov	r2, sp
+ 257 0006 264B     		ldr	r3, .L24
+ 258 0008 0C33     		adds	r3, r3, #12
+ 259 000a 13CB     		ldmia	r3!, {r0, r1, r4}
+ 260 000c 13C2     		stmia	r2!, {r0, r1, r4}
+ 261 000e 13CB     		ldmia	r3!, {r0, r1, r4}
+ 262 0010 13C2     		stmia	r2!, {r0, r1, r4}
+ 263 0012 03CB     		ldmia	r3!, {r0, r1}
+ 264 0014 03C2     		stmia	r2!, {r0, r1}
+  60:main.c        ****   CyGlobalIntEnable;
+ 265              		.loc 1 60 0
+ 266              		.syntax divided
+ 267              	@ 60 "main.c" 1
+ 268 0016 62B6     		CPSIE   i
+ 269              	@ 0 "" 2
+  61:main.c        **** 
+  62:main.c        ****   SPIM_Start();
+ 270              		.loc 1 62 0
+ 271              		.thumb
+ 272              		.syntax unified
+ 273 0018 FFF7FEFF 		bl	SPIM_Start
+ 274              	.LVL21:
+  63:main.c        ****   isr_100Hz_StartEx(isr_100Hz);
+ 275              		.loc 1 63 0
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 7
+
+
+ 276 001c 2148     		ldr	r0, .L24+4
+ 277 001e FFF7FEFF 		bl	isr_100Hz_StartEx
+ 278              	.LVL22:
+ 279              	.L21:
+ 280              	.LBB2:
+  64:main.c        **** 
+  65:main.c        ****   for (;;) {
+  66:main.c        ****     for (uint8 a = 0; a <= 1; ++a) {
+ 281              		.loc 1 66 0
+ 282 0022 0026     		movs	r6, #0
+ 283 0024 39E0     		b	.L17
+ 284              	.LVL23:
+ 285              	.L18:
+ 286              	.LBB3:
+ 287              	.LBB4:
+  67:main.c        ****         for (uint8 b = 0; b <= 1; ++b) {
+  68:main.c        ****             for (uint8 c = 0; c <= 1; ++c) {
+  69:main.c        ****                 Pin_A_Write(5 * a);
+ 288              		.loc 1 69 0 discriminator 3
+ 289 0026 B000     		lsls	r0, r6, #2
+ 290 0028 3018     		adds	r0, r6, r0
+ 291 002a C0B2     		uxtb	r0, r0
+ 292 002c FFF7FEFF 		bl	Pin_A_Write
+ 293              	.LVL24:
+  70:main.c        ****                 Pin_B_Write(5 * b);
+ 294              		.loc 1 70 0 discriminator 3
+ 295 0030 A800     		lsls	r0, r5, #2
+ 296 0032 2818     		adds	r0, r5, r0
+ 297 0034 C0B2     		uxtb	r0, r0
+ 298 0036 FFF7FEFF 		bl	Pin_B_Write
+ 299              	.LVL25:
+  71:main.c        ****                 Pin_C_Write(5 * c);
+ 300              		.loc 1 71 0 discriminator 3
+ 301 003a A000     		lsls	r0, r4, #2
+ 302 003c 2018     		adds	r0, r4, r0
+ 303 003e C0B2     		uxtb	r0, r0
+ 304 0040 FFF7FEFF 		bl	Pin_C_Write
+ 305              	.LVL26:
+  72:main.c        ****                 out7seg(10000 + a*1000 + b*100 + c*10 + OUTPUTS[a*4 + b*2 + c], 1);
+ 306              		.loc 1 72 0 discriminator 3
+ 307 0044 7300     		lsls	r3, r6, #1
+ 308 0046 5B19     		adds	r3, r3, r5
+ 309 0048 5B00     		lsls	r3, r3, #1
+ 310 004a E318     		adds	r3, r4, r3
+ 311 004c 9B00     		lsls	r3, r3, #2
+ 312 004e 6A46     		mov	r2, sp
+ 313 0050 9B58     		ldr	r3, [r3, r2]
+ 314 0052 FA20     		movs	r0, #250
+ 315 0054 8000     		lsls	r0, r0, #2
+ 316 0056 7043     		muls	r0, r6
+ 317 0058 6422     		movs	r2, #100
+ 318 005a 6A43     		muls	r2, r5
+ 319 005c 8018     		adds	r0, r0, r2
+ 320 005e A100     		lsls	r1, r4, #2
+ 321 0060 6118     		adds	r1, r4, r1
+ 322 0062 4A00     		lsls	r2, r1, #1
+ 323 0064 8018     		adds	r0, r0, r2
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 8
+
+
+ 324 0066 C018     		adds	r0, r0, r3
+ 325 0068 0F4B     		ldr	r3, .L24+8
+ 326 006a 9C46     		mov	ip, r3
+ 327 006c 6044     		add	r0, r0, ip
+ 328 006e 00B2     		sxth	r0, r0
+ 329 0070 0121     		movs	r1, #1
+ 330 0072 FFF7FEFF 		bl	out7seg
+ 331              	.LVL27:
+  73:main.c        ****                 CyDelay(2000);
+ 332              		.loc 1 73 0 discriminator 3
+ 333 0076 FA20     		movs	r0, #250
+ 334 0078 C000     		lsls	r0, r0, #3
+ 335 007a FFF7FEFF 		bl	CyDelay
+ 336              	.LVL28:
+  68:main.c        ****                 Pin_A_Write(5 * a);
+ 337              		.loc 1 68 0 discriminator 3
+ 338 007e 0134     		adds	r4, r4, #1
+ 339              	.LVL29:
+ 340 0080 E4B2     		uxtb	r4, r4
+ 341              	.LVL30:
+ 342 0082 00E0     		b	.L19
+ 343              	.LVL31:
+ 344              	.L22:
+ 345              	.LBE4:
+ 346 0084 0024     		movs	r4, #0
+ 347              	.L19:
+ 348              	.LVL32:
+ 349              	.LBB5:
+  68:main.c        ****                 Pin_A_Write(5 * a);
+ 350              		.loc 1 68 0 is_stmt 0 discriminator 1
+ 351 0086 012C     		cmp	r4, #1
+ 352 0088 CDD9     		bls	.L18
+ 353              	.LBE5:
+  67:main.c        ****             for (uint8 c = 0; c <= 1; ++c) {
+ 354              		.loc 1 67 0 is_stmt 1 discriminator 2
+ 355 008a 0135     		adds	r5, r5, #1
+ 356              	.LVL33:
+ 357 008c EDB2     		uxtb	r5, r5
+ 358              	.LVL34:
+ 359 008e 00E0     		b	.L20
+ 360              	.LVL35:
+ 361              	.L23:
+ 362              	.LBE3:
+ 363 0090 0025     		movs	r5, #0
+ 364              	.L20:
+ 365              	.LVL36:
+ 366              	.LBB6:
+  67:main.c        ****             for (uint8 c = 0; c <= 1; ++c) {
+ 367              		.loc 1 67 0 is_stmt 0 discriminator 1
+ 368 0092 012D     		cmp	r5, #1
+ 369 0094 F6D9     		bls	.L22
+ 370              	.LBE6:
+  66:main.c        ****         for (uint8 b = 0; b <= 1; ++b) {
+ 371              		.loc 1 66 0 is_stmt 1 discriminator 2
+ 372 0096 0136     		adds	r6, r6, #1
+ 373              	.LVL37:
+ 374 0098 F6B2     		uxtb	r6, r6
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 9
+
+
+ 375              	.LVL38:
+ 376              	.L17:
+  66:main.c        ****         for (uint8 b = 0; b <= 1; ++b) {
+ 377              		.loc 1 66 0 is_stmt 0 discriminator 1
+ 378 009a 012E     		cmp	r6, #1
+ 379 009c F8D9     		bls	.L23
+ 380 009e C0E7     		b	.L21
+ 381              	.L25:
+ 382              		.align	2
+ 383              	.L24:
+ 384 00a0 00000000 		.word	.LANCHOR2
+ 385 00a4 00000000 		.word	isr_100Hz
+ 386 00a8 10270000 		.word	10000
+ 387              	.LBE2:
+ 388              		.cfi_endproc
+ 389              	.LFE37:
+ 390              		.size	main, .-main
+ 391              		.global	MINUS
+ 392              		.global	KOD7
+ 393              		.global	indyk
+ 394              		.section	.rodata
+ 395              		.align	2
+ 396              		.set	.LANCHOR2,. + 0
+ 397              		.type	KOD7, %object
+ 398              		.size	KOD7, 10
+ 399              	KOD7:
+ 400 0000 03       		.byte	3
+ 401 0001 9F       		.byte	-97
+ 402 0002 25       		.byte	37
+ 403 0003 0D       		.byte	13
+ 404 0004 99       		.byte	-103
+ 405 0005 49       		.byte	73
+ 406 0006 41       		.byte	65
+ 407 0007 1F       		.byte	31
+ 408 0008 01       		.byte	1
+ 409 0009 09       		.byte	9
+ 410 000a 0000     		.space	2
+ 411              	.LC0:
+ 412 000c 00000000 		.word	0
+ 413 0010 01000000 		.word	1
+ 414 0014 00000000 		.word	0
+ 415 0018 00000000 		.word	0
+ 416 001c 00000000 		.word	0
+ 417 0020 01000000 		.word	1
+ 418 0024 01000000 		.word	1
+ 419 0028 00000000 		.word	0
+ 420              		.type	MINUS, %object
+ 421              		.size	MINUS, 1
+ 422              	MINUS:
+ 423 002c FD       		.byte	-3
+ 424              		.data
+ 425              		.align	2
+ 426              		.set	.LANCHOR0,. + 0
+ 427              		.type	indyk, %object
+ 428              		.size	indyk, 8
+ 429              	indyk:
+ 430 0000 FF10     		.short	4351
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 10
+
+
+ 431 0002 FF20     		.short	8447
+ 432 0004 FF40     		.short	16639
+ 433 0006 FF80     		.short	-32513
+ 434              		.bss
+ 435              		.set	.LANCHOR1,. + 0
+ 436              		.type	N_indyk.5526, %object
+ 437              		.size	N_indyk.5526, 1
+ 438              	N_indyk.5526:
+ 439 0000 00       		.space	1
+ 440              		.text
+ 441              	.Letext0:
+ 442              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 443              		.file 3 "Generated_Source\\PSoC4/SPIM.h"
+ 444              		.file 4 "Generated_Source\\PSoC4/Pin_A.h"
+ 445              		.file 5 "Generated_Source\\PSoC4/Pin_B.h"
+ 446              		.file 6 "Generated_Source\\PSoC4/Pin_C.h"
+ 447              		.file 7 "Generated_Source\\PSoC4/CyLib.h"
+ 448              		.file 8 "Generated_Source\\PSoC4/isr_100Hz.h"
+ 449              		.section	.debug_info,"",%progbits
+ 450              	.Ldebug_info0:
+ 451 0000 DD020000 		.4byte	0x2dd
+ 452 0004 0400     		.2byte	0x4
+ 453 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 454 000a 04       		.byte	0x4
+ 455 000b 01       		.uleb128 0x1
+ 456 000c 39010000 		.4byte	.LASF34
+ 457 0010 0C       		.byte	0xc
+ 458 0011 E4010000 		.4byte	.LASF35
+ 459 0015 FB000000 		.4byte	.LASF36
+ 460 0019 30000000 		.4byte	.Ldebug_ranges0+0x30
+ 461 001d 00000000 		.4byte	0
+ 462 0021 00000000 		.4byte	.Ldebug_line0
+ 463 0025 02       		.uleb128 0x2
+ 464 0026 01       		.byte	0x1
+ 465 0027 06       		.byte	0x6
+ 466 0028 1C020000 		.4byte	.LASF0
+ 467 002c 02       		.uleb128 0x2
+ 468 002d 01       		.byte	0x1
+ 469 002e 08       		.byte	0x8
+ 470 002f 86000000 		.4byte	.LASF1
+ 471 0033 02       		.uleb128 0x2
+ 472 0034 02       		.byte	0x2
+ 473 0035 05       		.byte	0x5
+ 474 0036 F8010000 		.4byte	.LASF2
+ 475 003a 02       		.uleb128 0x2
+ 476 003b 02       		.byte	0x2
+ 477 003c 07       		.byte	0x7
+ 478 003d 1E000000 		.4byte	.LASF3
+ 479 0041 02       		.uleb128 0x2
+ 480 0042 04       		.byte	0x4
+ 481 0043 05       		.byte	0x5
+ 482 0044 02020000 		.4byte	.LASF4
+ 483 0048 02       		.uleb128 0x2
+ 484 0049 04       		.byte	0x4
+ 485 004a 07       		.byte	0x7
+ 486 004b 66000000 		.4byte	.LASF5
+ 487 004f 02       		.uleb128 0x2
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 11
+
+
+ 488 0050 08       		.byte	0x8
+ 489 0051 05       		.byte	0x5
+ 490 0052 D6010000 		.4byte	.LASF6
+ 491 0056 02       		.uleb128 0x2
+ 492 0057 08       		.byte	0x8
+ 493 0058 07       		.byte	0x7
+ 494 0059 D9000000 		.4byte	.LASF7
+ 495 005d 03       		.uleb128 0x3
+ 496 005e 04       		.byte	0x4
+ 497 005f 05       		.byte	0x5
+ 498 0060 696E7400 		.ascii	"int\000"
+ 499 0064 02       		.uleb128 0x2
+ 500 0065 04       		.byte	0x4
+ 501 0066 07       		.byte	0x7
+ 502 0067 CC000000 		.4byte	.LASF8
+ 503 006b 04       		.uleb128 0x4
+ 504 006c 78000000 		.4byte	.LASF9
+ 505 0070 02       		.byte	0x2
+ 506 0071 E401     		.2byte	0x1e4
+ 507 0073 2C000000 		.4byte	0x2c
+ 508 0077 04       		.uleb128 0x4
+ 509 0078 BB000000 		.4byte	.LASF10
+ 510 007c 02       		.byte	0x2
+ 511 007d E501     		.2byte	0x1e5
+ 512 007f 3A000000 		.4byte	0x3a
+ 513 0083 04       		.uleb128 0x4
+ 514 0084 60000000 		.4byte	.LASF11
+ 515 0088 02       		.byte	0x2
+ 516 0089 E801     		.2byte	0x1e8
+ 517 008b 33000000 		.4byte	0x33
+ 518 008f 02       		.uleb128 0x2
+ 519 0090 04       		.byte	0x4
+ 520 0091 04       		.byte	0x4
+ 521 0092 37000000 		.4byte	.LASF12
+ 522 0096 02       		.uleb128 0x2
+ 523 0097 08       		.byte	0x8
+ 524 0098 04       		.byte	0x4
+ 525 0099 94000000 		.4byte	.LASF13
+ 526 009d 02       		.uleb128 0x2
+ 527 009e 01       		.byte	0x1
+ 528 009f 08       		.byte	0x8
+ 529 00a0 EB010000 		.4byte	.LASF14
+ 530 00a4 02       		.uleb128 0x2
+ 531 00a5 08       		.byte	0x8
+ 532 00a6 04       		.byte	0x4
+ 533 00a7 10020000 		.4byte	.LASF15
+ 534 00ab 02       		.uleb128 0x2
+ 535 00ac 04       		.byte	0x4
+ 536 00ad 07       		.byte	0x7
+ 537 00ae C7010000 		.4byte	.LASF16
+ 538 00b2 05       		.uleb128 0x5
+ 539 00b3 C2000000 		.4byte	.LASF17
+ 540 00b7 01       		.byte	0x1
+ 541 00b8 15       		.byte	0x15
+ 542 00b9 00000000 		.4byte	.LFB35
+ 543 00bd 24000000 		.4byte	.LFE35-.LFB35
+ 544 00c1 01       		.uleb128 0x1
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 12
+
+
+ 545 00c2 9C       		.byte	0x9c
+ 546 00c3 E2000000 		.4byte	0xe2
+ 547 00c7 06       		.uleb128 0x6
+ 548 00c8 7E000000 		.4byte	.LASF21
+ 549 00cc 01       		.byte	0x1
+ 550 00cd 16       		.byte	0x16
+ 551 00ce 6B000000 		.4byte	0x6b
+ 552 00d2 05       		.uleb128 0x5
+ 553 00d3 03       		.byte	0x3
+ 554 00d4 00000000 		.4byte	N_indyk.5526
+ 555 00d8 07       		.uleb128 0x7
+ 556 00d9 10000000 		.4byte	.LVL0
+ 557 00dd 93020000 		.4byte	0x293
+ 558 00e1 00       		.byte	0
+ 559 00e2 08       		.uleb128 0x8
+ 560 00e3 F0010000 		.4byte	.LASF18
+ 561 00e7 01       		.byte	0x1
+ 562 00e8 1E       		.byte	0x1e
+ 563 00e9 00000000 		.4byte	.LFB36
+ 564 00ed C0000000 		.4byte	.LFE36-.LFB36
+ 565 00f1 01       		.uleb128 0x1
+ 566 00f2 9C       		.byte	0x9c
+ 567 00f3 32010000 		.4byte	0x132
+ 568 00f7 09       		.uleb128 0x9
+ 569 00f8 3D000000 		.4byte	.LASF19
+ 570 00fc 01       		.byte	0x1
+ 571 00fd 1E       		.byte	0x1e
+ 572 00fe 83000000 		.4byte	0x83
+ 573 0102 00000000 		.4byte	.LLST0
+ 574 0106 09       		.uleb128 0x9
+ 575 0107 9B000000 		.4byte	.LASF20
+ 576 010b 01       		.byte	0x1
+ 577 010c 1E       		.byte	0x1e
+ 578 010d 6B000000 		.4byte	0x6b
+ 579 0111 34000000 		.4byte	.LLST1
+ 580 0115 0A       		.uleb128 0xa
+ 581 0116 6900     		.ascii	"i\000"
+ 582 0118 01       		.byte	0x1
+ 583 0119 1F       		.byte	0x1f
+ 584 011a 6B000000 		.4byte	0x6b
+ 585 011e 55000000 		.4byte	.LLST2
+ 586 0122 0B       		.uleb128 0xb
+ 587 0123 0B020000 		.4byte	.LASF22
+ 588 0127 01       		.byte	0x1
+ 589 0128 20       		.byte	0x20
+ 590 0129 6B000000 		.4byte	0x6b
+ 591 012d 94000000 		.4byte	.LLST3
+ 592 0131 00       		.byte	0
+ 593 0132 0C       		.uleb128 0xc
+ 594 0133 AA000000 		.4byte	.LASF37
+ 595 0137 01       		.byte	0x1
+ 596 0138 3A       		.byte	0x3a
+ 597 0139 5D000000 		.4byte	0x5d
+ 598 013d 00000000 		.4byte	.LFB37
+ 599 0141 AC000000 		.4byte	.LFE37-.LFB37
+ 600 0145 01       		.uleb128 0x1
+ 601 0146 9C       		.byte	0x9c
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 13
+
+
+ 602 0147 26020000 		.4byte	0x226
+ 603 014b 06       		.uleb128 0x6
+ 604 014c 11000000 		.4byte	.LASF23
+ 605 0150 01       		.byte	0x1
+ 606 0151 3B       		.byte	0x3b
+ 607 0152 26020000 		.4byte	0x226
+ 608 0156 02       		.uleb128 0x2
+ 609 0157 91       		.byte	0x91
+ 610 0158 50       		.sleb128 -48
+ 611 0159 0D       		.uleb128 0xd
+ 612 015a 22000000 		.4byte	.LBB2
+ 613 015e 8A000000 		.4byte	.LBE2-.LBB2
+ 614 0162 09020000 		.4byte	0x209
+ 615 0166 0A       		.uleb128 0xa
+ 616 0167 6100     		.ascii	"a\000"
+ 617 0169 01       		.byte	0x1
+ 618 016a 42       		.byte	0x42
+ 619 016b 6B000000 		.4byte	0x6b
+ 620 016f A7000000 		.4byte	.LLST4
+ 621 0173 0E       		.uleb128 0xe
+ 622 0174 00000000 		.4byte	.Ldebug_ranges0+0
+ 623 0178 0A       		.uleb128 0xa
+ 624 0179 6200     		.ascii	"b\000"
+ 625 017b 01       		.byte	0x1
+ 626 017c 43       		.byte	0x43
+ 627 017d 6B000000 		.4byte	0x6b
+ 628 0181 D1000000 		.4byte	.LLST5
+ 629 0185 0E       		.uleb128 0xe
+ 630 0186 18000000 		.4byte	.Ldebug_ranges0+0x18
+ 631 018a 0A       		.uleb128 0xa
+ 632 018b 6300     		.ascii	"c\000"
+ 633 018d 01       		.byte	0x1
+ 634 018e 44       		.byte	0x44
+ 635 018f 6B000000 		.4byte	0x6b
+ 636 0193 FA000000 		.4byte	.LLST6
+ 637 0197 0F       		.uleb128 0xf
+ 638 0198 30000000 		.4byte	.LVL24
+ 639 019c 9E020000 		.4byte	0x29e
+ 640 01a0 B0010000 		.4byte	0x1b0
+ 641 01a4 10       		.uleb128 0x10
+ 642 01a5 01       		.uleb128 0x1
+ 643 01a6 50       		.byte	0x50
+ 644 01a7 07       		.uleb128 0x7
+ 645 01a8 76       		.byte	0x76
+ 646 01a9 00       		.sleb128 0
+ 647 01aa 32       		.byte	0x32
+ 648 01ab 24       		.byte	0x24
+ 649 01ac 76       		.byte	0x76
+ 650 01ad 00       		.sleb128 0
+ 651 01ae 22       		.byte	0x22
+ 652 01af 00       		.byte	0
+ 653 01b0 0F       		.uleb128 0xf
+ 654 01b1 3A000000 		.4byte	.LVL25
+ 655 01b5 A9020000 		.4byte	0x2a9
+ 656 01b9 C9010000 		.4byte	0x1c9
+ 657 01bd 10       		.uleb128 0x10
+ 658 01be 01       		.uleb128 0x1
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 14
+
+
+ 659 01bf 50       		.byte	0x50
+ 660 01c0 07       		.uleb128 0x7
+ 661 01c1 75       		.byte	0x75
+ 662 01c2 00       		.sleb128 0
+ 663 01c3 32       		.byte	0x32
+ 664 01c4 24       		.byte	0x24
+ 665 01c5 75       		.byte	0x75
+ 666 01c6 00       		.sleb128 0
+ 667 01c7 22       		.byte	0x22
+ 668 01c8 00       		.byte	0
+ 669 01c9 0F       		.uleb128 0xf
+ 670 01ca 44000000 		.4byte	.LVL26
+ 671 01ce B4020000 		.4byte	0x2b4
+ 672 01d2 E2010000 		.4byte	0x1e2
+ 673 01d6 10       		.uleb128 0x10
+ 674 01d7 01       		.uleb128 0x1
+ 675 01d8 50       		.byte	0x50
+ 676 01d9 07       		.uleb128 0x7
+ 677 01da 74       		.byte	0x74
+ 678 01db 00       		.sleb128 0
+ 679 01dc 32       		.byte	0x32
+ 680 01dd 24       		.byte	0x24
+ 681 01de 74       		.byte	0x74
+ 682 01df 00       		.sleb128 0
+ 683 01e0 22       		.byte	0x22
+ 684 01e1 00       		.byte	0
+ 685 01e2 0F       		.uleb128 0xf
+ 686 01e3 76000000 		.4byte	.LVL27
+ 687 01e7 E2000000 		.4byte	0xe2
+ 688 01eb F5010000 		.4byte	0x1f5
+ 689 01ef 10       		.uleb128 0x10
+ 690 01f0 01       		.uleb128 0x1
+ 691 01f1 51       		.byte	0x51
+ 692 01f2 01       		.uleb128 0x1
+ 693 01f3 31       		.byte	0x31
+ 694 01f4 00       		.byte	0
+ 695 01f5 11       		.uleb128 0x11
+ 696 01f6 7E000000 		.4byte	.LVL28
+ 697 01fa BF020000 		.4byte	0x2bf
+ 698 01fe 10       		.uleb128 0x10
+ 699 01ff 01       		.uleb128 0x1
+ 700 0200 50       		.byte	0x50
+ 701 0201 03       		.uleb128 0x3
+ 702 0202 0A       		.byte	0xa
+ 703 0203 D007     		.2byte	0x7d0
+ 704 0205 00       		.byte	0
+ 705 0206 00       		.byte	0
+ 706 0207 00       		.byte	0
+ 707 0208 00       		.byte	0
+ 708 0209 07       		.uleb128 0x7
+ 709 020a 1C000000 		.4byte	.LVL21
+ 710 020e CA020000 		.4byte	0x2ca
+ 711 0212 11       		.uleb128 0x11
+ 712 0213 22000000 		.4byte	.LVL22
+ 713 0217 D5020000 		.4byte	0x2d5
+ 714 021b 10       		.uleb128 0x10
+ 715 021c 01       		.uleb128 0x1
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 15
+
+
+ 716 021d 50       		.byte	0x50
+ 717 021e 05       		.uleb128 0x5
+ 718 021f 03       		.byte	0x3
+ 719 0220 00000000 		.4byte	isr_100Hz
+ 720 0224 00       		.byte	0
+ 721 0225 00       		.byte	0
+ 722 0226 12       		.uleb128 0x12
+ 723 0227 5D000000 		.4byte	0x5d
+ 724 022b 36020000 		.4byte	0x236
+ 725 022f 13       		.uleb128 0x13
+ 726 0230 AB000000 		.4byte	0xab
+ 727 0234 07       		.byte	0x7
+ 728 0235 00       		.byte	0
+ 729 0236 12       		.uleb128 0x12
+ 730 0237 77000000 		.4byte	0x77
+ 731 023b 46020000 		.4byte	0x246
+ 732 023f 13       		.uleb128 0x13
+ 733 0240 AB000000 		.4byte	0xab
+ 734 0244 03       		.byte	0x3
+ 735 0245 00       		.byte	0
+ 736 0246 14       		.uleb128 0x14
+ 737 0247 31000000 		.4byte	.LASF24
+ 738 024b 01       		.byte	0x1
+ 739 024c 10       		.byte	0x10
+ 740 024d 36020000 		.4byte	0x236
+ 741 0251 05       		.uleb128 0x5
+ 742 0252 03       		.byte	0x3
+ 743 0253 00000000 		.4byte	indyk
+ 744 0257 12       		.uleb128 0x12
+ 745 0258 67020000 		.4byte	0x267
+ 746 025c 67020000 		.4byte	0x267
+ 747 0260 13       		.uleb128 0x13
+ 748 0261 AB000000 		.4byte	0xab
+ 749 0265 09       		.byte	0x9
+ 750 0266 00       		.byte	0
+ 751 0267 15       		.uleb128 0x15
+ 752 0268 6B000000 		.4byte	0x6b
+ 753 026c 14       		.uleb128 0x14
+ 754 026d 19000000 		.4byte	.LASF25
+ 755 0271 01       		.byte	0x1
+ 756 0272 11       		.byte	0x11
+ 757 0273 7D020000 		.4byte	0x27d
+ 758 0277 05       		.uleb128 0x5
+ 759 0278 03       		.byte	0x3
+ 760 0279 00000000 		.4byte	KOD7
+ 761 027d 15       		.uleb128 0x15
+ 762 027e 57020000 		.4byte	0x257
+ 763 0282 14       		.uleb128 0x14
+ 764 0283 D0010000 		.4byte	.LASF26
+ 765 0287 01       		.byte	0x1
+ 766 0288 13       		.byte	0x13
+ 767 0289 67020000 		.4byte	0x267
+ 768 028d 05       		.uleb128 0x5
+ 769 028e 03       		.byte	0x3
+ 770 028f 00000000 		.4byte	MINUS
+ 771 0293 16       		.uleb128 0x16
+ 772 0294 00000000 		.4byte	.LASF27
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 16
+
+
+ 773 0298 00000000 		.4byte	.LASF27
+ 774 029c 03       		.byte	0x3
+ 775 029d 5E       		.byte	0x5e
+ 776 029e 16       		.uleb128 0x16
+ 777 029f 42000000 		.4byte	.LASF28
+ 778 02a3 42000000 		.4byte	.LASF28
+ 779 02a7 04       		.byte	0x4
+ 780 02a8 33       		.byte	0x33
+ 781 02a9 16       		.uleb128 0x16
+ 782 02aa 28020000 		.4byte	.LASF29
+ 783 02ae 28020000 		.4byte	.LASF29
+ 784 02b2 05       		.byte	0x5
+ 785 02b3 33       		.byte	0x33
+ 786 02b4 16       		.uleb128 0x16
+ 787 02b5 AF000000 		.4byte	.LASF30
+ 788 02b9 AF000000 		.4byte	.LASF30
+ 789 02bd 06       		.byte	0x6
+ 790 02be 33       		.byte	0x33
+ 791 02bf 16       		.uleb128 0x16
+ 792 02c0 34020000 		.4byte	.LASF31
+ 793 02c4 34020000 		.4byte	.LASF31
+ 794 02c8 07       		.byte	0x7
+ 795 02c9 D9       		.byte	0xd9
+ 796 02ca 16       		.uleb128 0x16
+ 797 02cb F0000000 		.4byte	.LASF32
+ 798 02cf F0000000 		.4byte	.LASF32
+ 799 02d3 03       		.byte	0x3
+ 800 02d4 4D       		.byte	0x4d
+ 801 02d5 16       		.uleb128 0x16
+ 802 02d6 4E000000 		.4byte	.LASF33
+ 803 02da 4E000000 		.4byte	.LASF33
+ 804 02de 08       		.byte	0x8
+ 805 02df 18       		.byte	0x18
+ 806 02e0 00       		.byte	0
+ 807              		.section	.debug_abbrev,"",%progbits
+ 808              	.Ldebug_abbrev0:
+ 809 0000 01       		.uleb128 0x1
+ 810 0001 11       		.uleb128 0x11
+ 811 0002 01       		.byte	0x1
+ 812 0003 25       		.uleb128 0x25
+ 813 0004 0E       		.uleb128 0xe
+ 814 0005 13       		.uleb128 0x13
+ 815 0006 0B       		.uleb128 0xb
+ 816 0007 03       		.uleb128 0x3
+ 817 0008 0E       		.uleb128 0xe
+ 818 0009 1B       		.uleb128 0x1b
+ 819 000a 0E       		.uleb128 0xe
+ 820 000b 55       		.uleb128 0x55
+ 821 000c 17       		.uleb128 0x17
+ 822 000d 11       		.uleb128 0x11
+ 823 000e 01       		.uleb128 0x1
+ 824 000f 10       		.uleb128 0x10
+ 825 0010 17       		.uleb128 0x17
+ 826 0011 00       		.byte	0
+ 827 0012 00       		.byte	0
+ 828 0013 02       		.uleb128 0x2
+ 829 0014 24       		.uleb128 0x24
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 17
+
+
+ 830 0015 00       		.byte	0
+ 831 0016 0B       		.uleb128 0xb
+ 832 0017 0B       		.uleb128 0xb
+ 833 0018 3E       		.uleb128 0x3e
+ 834 0019 0B       		.uleb128 0xb
+ 835 001a 03       		.uleb128 0x3
+ 836 001b 0E       		.uleb128 0xe
+ 837 001c 00       		.byte	0
+ 838 001d 00       		.byte	0
+ 839 001e 03       		.uleb128 0x3
+ 840 001f 24       		.uleb128 0x24
+ 841 0020 00       		.byte	0
+ 842 0021 0B       		.uleb128 0xb
+ 843 0022 0B       		.uleb128 0xb
+ 844 0023 3E       		.uleb128 0x3e
+ 845 0024 0B       		.uleb128 0xb
+ 846 0025 03       		.uleb128 0x3
+ 847 0026 08       		.uleb128 0x8
+ 848 0027 00       		.byte	0
+ 849 0028 00       		.byte	0
+ 850 0029 04       		.uleb128 0x4
+ 851 002a 16       		.uleb128 0x16
+ 852 002b 00       		.byte	0
+ 853 002c 03       		.uleb128 0x3
+ 854 002d 0E       		.uleb128 0xe
+ 855 002e 3A       		.uleb128 0x3a
+ 856 002f 0B       		.uleb128 0xb
+ 857 0030 3B       		.uleb128 0x3b
+ 858 0031 05       		.uleb128 0x5
+ 859 0032 49       		.uleb128 0x49
+ 860 0033 13       		.uleb128 0x13
+ 861 0034 00       		.byte	0
+ 862 0035 00       		.byte	0
+ 863 0036 05       		.uleb128 0x5
+ 864 0037 2E       		.uleb128 0x2e
+ 865 0038 01       		.byte	0x1
+ 866 0039 3F       		.uleb128 0x3f
+ 867 003a 19       		.uleb128 0x19
+ 868 003b 03       		.uleb128 0x3
+ 869 003c 0E       		.uleb128 0xe
+ 870 003d 3A       		.uleb128 0x3a
+ 871 003e 0B       		.uleb128 0xb
+ 872 003f 3B       		.uleb128 0x3b
+ 873 0040 0B       		.uleb128 0xb
+ 874 0041 27       		.uleb128 0x27
+ 875 0042 19       		.uleb128 0x19
+ 876 0043 11       		.uleb128 0x11
+ 877 0044 01       		.uleb128 0x1
+ 878 0045 12       		.uleb128 0x12
+ 879 0046 06       		.uleb128 0x6
+ 880 0047 40       		.uleb128 0x40
+ 881 0048 18       		.uleb128 0x18
+ 882 0049 9742     		.uleb128 0x2117
+ 883 004b 19       		.uleb128 0x19
+ 884 004c 01       		.uleb128 0x1
+ 885 004d 13       		.uleb128 0x13
+ 886 004e 00       		.byte	0
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 18
+
+
+ 887 004f 00       		.byte	0
+ 888 0050 06       		.uleb128 0x6
+ 889 0051 34       		.uleb128 0x34
+ 890 0052 00       		.byte	0
+ 891 0053 03       		.uleb128 0x3
+ 892 0054 0E       		.uleb128 0xe
+ 893 0055 3A       		.uleb128 0x3a
+ 894 0056 0B       		.uleb128 0xb
+ 895 0057 3B       		.uleb128 0x3b
+ 896 0058 0B       		.uleb128 0xb
+ 897 0059 49       		.uleb128 0x49
+ 898 005a 13       		.uleb128 0x13
+ 899 005b 02       		.uleb128 0x2
+ 900 005c 18       		.uleb128 0x18
+ 901 005d 00       		.byte	0
+ 902 005e 00       		.byte	0
+ 903 005f 07       		.uleb128 0x7
+ 904 0060 898201   		.uleb128 0x4109
+ 905 0063 00       		.byte	0
+ 906 0064 11       		.uleb128 0x11
+ 907 0065 01       		.uleb128 0x1
+ 908 0066 31       		.uleb128 0x31
+ 909 0067 13       		.uleb128 0x13
+ 910 0068 00       		.byte	0
+ 911 0069 00       		.byte	0
+ 912 006a 08       		.uleb128 0x8
+ 913 006b 2E       		.uleb128 0x2e
+ 914 006c 01       		.byte	0x1
+ 915 006d 3F       		.uleb128 0x3f
+ 916 006e 19       		.uleb128 0x19
+ 917 006f 03       		.uleb128 0x3
+ 918 0070 0E       		.uleb128 0xe
+ 919 0071 3A       		.uleb128 0x3a
+ 920 0072 0B       		.uleb128 0xb
+ 921 0073 3B       		.uleb128 0x3b
+ 922 0074 0B       		.uleb128 0xb
+ 923 0075 27       		.uleb128 0x27
+ 924 0076 19       		.uleb128 0x19
+ 925 0077 11       		.uleb128 0x11
+ 926 0078 01       		.uleb128 0x1
+ 927 0079 12       		.uleb128 0x12
+ 928 007a 06       		.uleb128 0x6
+ 929 007b 40       		.uleb128 0x40
+ 930 007c 18       		.uleb128 0x18
+ 931 007d 9642     		.uleb128 0x2116
+ 932 007f 19       		.uleb128 0x19
+ 933 0080 01       		.uleb128 0x1
+ 934 0081 13       		.uleb128 0x13
+ 935 0082 00       		.byte	0
+ 936 0083 00       		.byte	0
+ 937 0084 09       		.uleb128 0x9
+ 938 0085 05       		.uleb128 0x5
+ 939 0086 00       		.byte	0
+ 940 0087 03       		.uleb128 0x3
+ 941 0088 0E       		.uleb128 0xe
+ 942 0089 3A       		.uleb128 0x3a
+ 943 008a 0B       		.uleb128 0xb
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 19
+
+
+ 944 008b 3B       		.uleb128 0x3b
+ 945 008c 0B       		.uleb128 0xb
+ 946 008d 49       		.uleb128 0x49
+ 947 008e 13       		.uleb128 0x13
+ 948 008f 02       		.uleb128 0x2
+ 949 0090 17       		.uleb128 0x17
+ 950 0091 00       		.byte	0
+ 951 0092 00       		.byte	0
+ 952 0093 0A       		.uleb128 0xa
+ 953 0094 34       		.uleb128 0x34
+ 954 0095 00       		.byte	0
+ 955 0096 03       		.uleb128 0x3
+ 956 0097 08       		.uleb128 0x8
+ 957 0098 3A       		.uleb128 0x3a
+ 958 0099 0B       		.uleb128 0xb
+ 959 009a 3B       		.uleb128 0x3b
+ 960 009b 0B       		.uleb128 0xb
+ 961 009c 49       		.uleb128 0x49
+ 962 009d 13       		.uleb128 0x13
+ 963 009e 02       		.uleb128 0x2
+ 964 009f 17       		.uleb128 0x17
+ 965 00a0 00       		.byte	0
+ 966 00a1 00       		.byte	0
+ 967 00a2 0B       		.uleb128 0xb
+ 968 00a3 34       		.uleb128 0x34
+ 969 00a4 00       		.byte	0
+ 970 00a5 03       		.uleb128 0x3
+ 971 00a6 0E       		.uleb128 0xe
+ 972 00a7 3A       		.uleb128 0x3a
+ 973 00a8 0B       		.uleb128 0xb
+ 974 00a9 3B       		.uleb128 0x3b
+ 975 00aa 0B       		.uleb128 0xb
+ 976 00ab 49       		.uleb128 0x49
+ 977 00ac 13       		.uleb128 0x13
+ 978 00ad 02       		.uleb128 0x2
+ 979 00ae 17       		.uleb128 0x17
+ 980 00af 00       		.byte	0
+ 981 00b0 00       		.byte	0
+ 982 00b1 0C       		.uleb128 0xc
+ 983 00b2 2E       		.uleb128 0x2e
+ 984 00b3 01       		.byte	0x1
+ 985 00b4 3F       		.uleb128 0x3f
+ 986 00b5 19       		.uleb128 0x19
+ 987 00b6 03       		.uleb128 0x3
+ 988 00b7 0E       		.uleb128 0xe
+ 989 00b8 3A       		.uleb128 0x3a
+ 990 00b9 0B       		.uleb128 0xb
+ 991 00ba 3B       		.uleb128 0x3b
+ 992 00bb 0B       		.uleb128 0xb
+ 993 00bc 49       		.uleb128 0x49
+ 994 00bd 13       		.uleb128 0x13
+ 995 00be 8701     		.uleb128 0x87
+ 996 00c0 19       		.uleb128 0x19
+ 997 00c1 11       		.uleb128 0x11
+ 998 00c2 01       		.uleb128 0x1
+ 999 00c3 12       		.uleb128 0x12
+ 1000 00c4 06       		.uleb128 0x6
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 20
+
+
+ 1001 00c5 40       		.uleb128 0x40
+ 1002 00c6 18       		.uleb128 0x18
+ 1003 00c7 9742     		.uleb128 0x2117
+ 1004 00c9 19       		.uleb128 0x19
+ 1005 00ca 01       		.uleb128 0x1
+ 1006 00cb 13       		.uleb128 0x13
+ 1007 00cc 00       		.byte	0
+ 1008 00cd 00       		.byte	0
+ 1009 00ce 0D       		.uleb128 0xd
+ 1010 00cf 0B       		.uleb128 0xb
+ 1011 00d0 01       		.byte	0x1
+ 1012 00d1 11       		.uleb128 0x11
+ 1013 00d2 01       		.uleb128 0x1
+ 1014 00d3 12       		.uleb128 0x12
+ 1015 00d4 06       		.uleb128 0x6
+ 1016 00d5 01       		.uleb128 0x1
+ 1017 00d6 13       		.uleb128 0x13
+ 1018 00d7 00       		.byte	0
+ 1019 00d8 00       		.byte	0
+ 1020 00d9 0E       		.uleb128 0xe
+ 1021 00da 0B       		.uleb128 0xb
+ 1022 00db 01       		.byte	0x1
+ 1023 00dc 55       		.uleb128 0x55
+ 1024 00dd 17       		.uleb128 0x17
+ 1025 00de 00       		.byte	0
+ 1026 00df 00       		.byte	0
+ 1027 00e0 0F       		.uleb128 0xf
+ 1028 00e1 898201   		.uleb128 0x4109
+ 1029 00e4 01       		.byte	0x1
+ 1030 00e5 11       		.uleb128 0x11
+ 1031 00e6 01       		.uleb128 0x1
+ 1032 00e7 31       		.uleb128 0x31
+ 1033 00e8 13       		.uleb128 0x13
+ 1034 00e9 01       		.uleb128 0x1
+ 1035 00ea 13       		.uleb128 0x13
+ 1036 00eb 00       		.byte	0
+ 1037 00ec 00       		.byte	0
+ 1038 00ed 10       		.uleb128 0x10
+ 1039 00ee 8A8201   		.uleb128 0x410a
+ 1040 00f1 00       		.byte	0
+ 1041 00f2 02       		.uleb128 0x2
+ 1042 00f3 18       		.uleb128 0x18
+ 1043 00f4 9142     		.uleb128 0x2111
+ 1044 00f6 18       		.uleb128 0x18
+ 1045 00f7 00       		.byte	0
+ 1046 00f8 00       		.byte	0
+ 1047 00f9 11       		.uleb128 0x11
+ 1048 00fa 898201   		.uleb128 0x4109
+ 1049 00fd 01       		.byte	0x1
+ 1050 00fe 11       		.uleb128 0x11
+ 1051 00ff 01       		.uleb128 0x1
+ 1052 0100 31       		.uleb128 0x31
+ 1053 0101 13       		.uleb128 0x13
+ 1054 0102 00       		.byte	0
+ 1055 0103 00       		.byte	0
+ 1056 0104 12       		.uleb128 0x12
+ 1057 0105 01       		.uleb128 0x1
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 21
+
+
+ 1058 0106 01       		.byte	0x1
+ 1059 0107 49       		.uleb128 0x49
+ 1060 0108 13       		.uleb128 0x13
+ 1061 0109 01       		.uleb128 0x1
+ 1062 010a 13       		.uleb128 0x13
+ 1063 010b 00       		.byte	0
+ 1064 010c 00       		.byte	0
+ 1065 010d 13       		.uleb128 0x13
+ 1066 010e 21       		.uleb128 0x21
+ 1067 010f 00       		.byte	0
+ 1068 0110 49       		.uleb128 0x49
+ 1069 0111 13       		.uleb128 0x13
+ 1070 0112 2F       		.uleb128 0x2f
+ 1071 0113 0B       		.uleb128 0xb
+ 1072 0114 00       		.byte	0
+ 1073 0115 00       		.byte	0
+ 1074 0116 14       		.uleb128 0x14
+ 1075 0117 34       		.uleb128 0x34
+ 1076 0118 00       		.byte	0
+ 1077 0119 03       		.uleb128 0x3
+ 1078 011a 0E       		.uleb128 0xe
+ 1079 011b 3A       		.uleb128 0x3a
+ 1080 011c 0B       		.uleb128 0xb
+ 1081 011d 3B       		.uleb128 0x3b
+ 1082 011e 0B       		.uleb128 0xb
+ 1083 011f 49       		.uleb128 0x49
+ 1084 0120 13       		.uleb128 0x13
+ 1085 0121 3F       		.uleb128 0x3f
+ 1086 0122 19       		.uleb128 0x19
+ 1087 0123 02       		.uleb128 0x2
+ 1088 0124 18       		.uleb128 0x18
+ 1089 0125 00       		.byte	0
+ 1090 0126 00       		.byte	0
+ 1091 0127 15       		.uleb128 0x15
+ 1092 0128 26       		.uleb128 0x26
+ 1093 0129 00       		.byte	0
+ 1094 012a 49       		.uleb128 0x49
+ 1095 012b 13       		.uleb128 0x13
+ 1096 012c 00       		.byte	0
+ 1097 012d 00       		.byte	0
+ 1098 012e 16       		.uleb128 0x16
+ 1099 012f 2E       		.uleb128 0x2e
+ 1100 0130 00       		.byte	0
+ 1101 0131 3F       		.uleb128 0x3f
+ 1102 0132 19       		.uleb128 0x19
+ 1103 0133 3C       		.uleb128 0x3c
+ 1104 0134 19       		.uleb128 0x19
+ 1105 0135 6E       		.uleb128 0x6e
+ 1106 0136 0E       		.uleb128 0xe
+ 1107 0137 03       		.uleb128 0x3
+ 1108 0138 0E       		.uleb128 0xe
+ 1109 0139 3A       		.uleb128 0x3a
+ 1110 013a 0B       		.uleb128 0xb
+ 1111 013b 3B       		.uleb128 0x3b
+ 1112 013c 0B       		.uleb128 0xb
+ 1113 013d 00       		.byte	0
+ 1114 013e 00       		.byte	0
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 22
+
+
+ 1115 013f 00       		.byte	0
+ 1116              		.section	.debug_loc,"",%progbits
+ 1117              	.Ldebug_loc0:
+ 1118              	.LLST0:
+ 1119 0000 00000000 		.4byte	.LVL1
+ 1120 0004 1C000000 		.4byte	.LVL3
+ 1121 0008 0100     		.2byte	0x1
+ 1122 000a 50       		.byte	0x50
+ 1123 000b 1C000000 		.4byte	.LVL3
+ 1124 000f 1E000000 		.4byte	.LVL4
+ 1125 0013 0100     		.2byte	0x1
+ 1126 0015 55       		.byte	0x55
+ 1127 0016 1E000000 		.4byte	.LVL4
+ 1128 001a 20000000 		.4byte	.LVL5
+ 1129 001e 0100     		.2byte	0x1
+ 1130 0020 50       		.byte	0x50
+ 1131 0021 24000000 		.4byte	.LVL6
+ 1132 0025 AA000000 		.4byte	.LVL19
+ 1133 0029 0100     		.2byte	0x1
+ 1134 002b 55       		.byte	0x55
+ 1135 002c 00000000 		.4byte	0
+ 1136 0030 00000000 		.4byte	0
+ 1137              	.LLST1:
+ 1138 0034 00000000 		.4byte	.LVL1
+ 1139 0038 24000000 		.4byte	.LVL6
+ 1140 003c 0100     		.2byte	0x1
+ 1141 003e 51       		.byte	0x51
+ 1142 003f 24000000 		.4byte	.LVL6
+ 1143 0043 C0000000 		.4byte	.LFE36
+ 1144 0047 0400     		.2byte	0x4
+ 1145 0049 F3       		.byte	0xf3
+ 1146 004a 01       		.uleb128 0x1
+ 1147 004b 51       		.byte	0x51
+ 1148 004c 9F       		.byte	0x9f
+ 1149 004d 00000000 		.4byte	0
+ 1150 0051 00000000 		.4byte	0
+ 1151              	.LLST2:
+ 1152 0055 24000000 		.4byte	.LVL6
+ 1153 0059 58000000 		.4byte	.LVL10
+ 1154 005d 0100     		.2byte	0x1
+ 1155 005f 54       		.byte	0x54
+ 1156 0060 5A000000 		.4byte	.LVL11
+ 1157 0064 6C000000 		.4byte	.LVL12
+ 1158 0068 0100     		.2byte	0x1
+ 1159 006a 54       		.byte	0x54
+ 1160 006b 6E000000 		.4byte	.LVL13
+ 1161 006f 80000000 		.4byte	.LVL14
+ 1162 0073 0100     		.2byte	0x1
+ 1163 0075 54       		.byte	0x54
+ 1164 0076 82000000 		.4byte	.LVL15
+ 1165 007a 92000000 		.4byte	.LVL16
+ 1166 007e 0100     		.2byte	0x1
+ 1167 0080 54       		.byte	0x54
+ 1168 0081 94000000 		.4byte	.LVL17
+ 1169 0085 AA000000 		.4byte	.LVL18
+ 1170 0089 0100     		.2byte	0x1
+ 1171 008b 54       		.byte	0x54
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 23
+
+
+ 1172 008c 00000000 		.4byte	0
+ 1173 0090 00000000 		.4byte	0
+ 1174              	.LLST3:
+ 1175 0094 14000000 		.4byte	.LVL2
+ 1176 0098 AA000000 		.4byte	.LVL20
+ 1177 009c 0100     		.2byte	0x1
+ 1178 009e 5A       		.byte	0x5a
+ 1179 009f 00000000 		.4byte	0
+ 1180 00a3 00000000 		.4byte	0
+ 1181              	.LLST4:
+ 1182 00a7 22000000 		.4byte	.LVL22
+ 1183 00ab 26000000 		.4byte	.LVL23
+ 1184 00af 0200     		.2byte	0x2
+ 1185 00b1 30       		.byte	0x30
+ 1186 00b2 9F       		.byte	0x9f
+ 1187 00b3 26000000 		.4byte	.LVL23
+ 1188 00b7 98000000 		.4byte	.LVL37
+ 1189 00bb 0100     		.2byte	0x1
+ 1190 00bd 56       		.byte	0x56
+ 1191 00be 9A000000 		.4byte	.LVL38
+ 1192 00c2 AC000000 		.4byte	.LFE37
+ 1193 00c6 0100     		.2byte	0x1
+ 1194 00c8 56       		.byte	0x56
+ 1195 00c9 00000000 		.4byte	0
+ 1196 00cd 00000000 		.4byte	0
+ 1197              	.LLST5:
+ 1198 00d1 26000000 		.4byte	.LVL23
+ 1199 00d5 8C000000 		.4byte	.LVL33
+ 1200 00d9 0100     		.2byte	0x1
+ 1201 00db 55       		.byte	0x55
+ 1202 00dc 8E000000 		.4byte	.LVL34
+ 1203 00e0 90000000 		.4byte	.LVL35
+ 1204 00e4 0100     		.2byte	0x1
+ 1205 00e6 55       		.byte	0x55
+ 1206 00e7 92000000 		.4byte	.LVL36
+ 1207 00eb 9A000000 		.4byte	.LVL38
+ 1208 00ef 0100     		.2byte	0x1
+ 1209 00f1 55       		.byte	0x55
+ 1210 00f2 00000000 		.4byte	0
+ 1211 00f6 00000000 		.4byte	0
+ 1212              	.LLST6:
+ 1213 00fa 26000000 		.4byte	.LVL23
+ 1214 00fe 80000000 		.4byte	.LVL29
+ 1215 0102 0100     		.2byte	0x1
+ 1216 0104 54       		.byte	0x54
+ 1217 0105 82000000 		.4byte	.LVL30
+ 1218 0109 84000000 		.4byte	.LVL31
+ 1219 010d 0100     		.2byte	0x1
+ 1220 010f 54       		.byte	0x54
+ 1221 0110 86000000 		.4byte	.LVL32
+ 1222 0114 90000000 		.4byte	.LVL35
+ 1223 0118 0100     		.2byte	0x1
+ 1224 011a 54       		.byte	0x54
+ 1225 011b 00000000 		.4byte	0
+ 1226 011f 00000000 		.4byte	0
+ 1227              		.section	.debug_aranges,"",%progbits
+ 1228 0000 2C000000 		.4byte	0x2c
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 24
+
+
+ 1229 0004 0200     		.2byte	0x2
+ 1230 0006 00000000 		.4byte	.Ldebug_info0
+ 1231 000a 04       		.byte	0x4
+ 1232 000b 00       		.byte	0
+ 1233 000c 0000     		.2byte	0
+ 1234 000e 0000     		.2byte	0
+ 1235 0010 00000000 		.4byte	.LFB35
+ 1236 0014 24000000 		.4byte	.LFE35-.LFB35
+ 1237 0018 00000000 		.4byte	.LFB36
+ 1238 001c C0000000 		.4byte	.LFE36-.LFB36
+ 1239 0020 00000000 		.4byte	.LFB37
+ 1240 0024 AC000000 		.4byte	.LFE37-.LFB37
+ 1241 0028 00000000 		.4byte	0
+ 1242 002c 00000000 		.4byte	0
+ 1243              		.section	.debug_ranges,"",%progbits
+ 1244              	.Ldebug_ranges0:
+ 1245 0000 26000000 		.4byte	.LBB3
+ 1246 0004 90000000 		.4byte	.LBE3
+ 1247 0008 92000000 		.4byte	.LBB6
+ 1248 000c 96000000 		.4byte	.LBE6
+ 1249 0010 00000000 		.4byte	0
+ 1250 0014 00000000 		.4byte	0
+ 1251 0018 26000000 		.4byte	.LBB4
+ 1252 001c 84000000 		.4byte	.LBE4
+ 1253 0020 86000000 		.4byte	.LBB5
+ 1254 0024 8A000000 		.4byte	.LBE5
+ 1255 0028 00000000 		.4byte	0
+ 1256 002c 00000000 		.4byte	0
+ 1257 0030 00000000 		.4byte	.LFB35
+ 1258 0034 24000000 		.4byte	.LFE35
+ 1259 0038 00000000 		.4byte	.LFB36
+ 1260 003c C0000000 		.4byte	.LFE36
+ 1261 0040 00000000 		.4byte	.LFB37
+ 1262 0044 AC000000 		.4byte	.LFE37
+ 1263 0048 00000000 		.4byte	0
+ 1264 004c 00000000 		.4byte	0
+ 1265              		.section	.debug_line,"",%progbits
+ 1266              	.Ldebug_line0:
+ 1267 0000 2B010000 		.section	.debug_str,"MS",%progbits,1
+ 1267      02008600 
+ 1267      00000201 
+ 1267      FB0E0D00 
+ 1267      01010101 
+ 1268              	.LASF27:
+ 1269 0000 5350494D 		.ascii	"SPIM_WriteTxData\000"
+ 1269      5F577269 
+ 1269      74655478 
+ 1269      44617461 
+ 1269      00
+ 1270              	.LASF23:
+ 1271 0011 4F555450 		.ascii	"OUTPUTS\000"
+ 1271      55545300 
+ 1272              	.LASF25:
+ 1273 0019 4B4F4437 		.ascii	"KOD7\000"
+ 1273      00
+ 1274              	.LASF3:
+ 1275 001e 73686F72 		.ascii	"short unsigned int\000"
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 25
+
+
+ 1275      7420756E 
+ 1275      7369676E 
+ 1275      65642069 
+ 1275      6E7400
+ 1276              	.LASF24:
+ 1277 0031 696E6479 		.ascii	"indyk\000"
+ 1277      6B00
+ 1278              	.LASF12:
+ 1279 0037 666C6F61 		.ascii	"float\000"
+ 1279      7400
+ 1280              	.LASF19:
+ 1281 003d 64617461 		.ascii	"data\000"
+ 1281      00
+ 1282              	.LASF28:
+ 1283 0042 50696E5F 		.ascii	"Pin_A_Write\000"
+ 1283      415F5772 
+ 1283      69746500 
+ 1284              	.LASF33:
+ 1285 004e 6973725F 		.ascii	"isr_100Hz_StartEx\000"
+ 1285      31303048 
+ 1285      7A5F5374 
+ 1285      61727445 
+ 1285      7800
+ 1286              	.LASF11:
+ 1287 0060 696E7431 		.ascii	"int16\000"
+ 1287      3600
+ 1288              	.LASF5:
+ 1289 0066 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1289      20756E73 
+ 1289      69676E65 
+ 1289      6420696E 
+ 1289      7400
+ 1290              	.LASF9:
+ 1291 0078 75696E74 		.ascii	"uint8\000"
+ 1291      3800
+ 1292              	.LASF21:
+ 1293 007e 4E5F696E 		.ascii	"N_indyk\000"
+ 1293      64796B00 
+ 1294              	.LASF1:
+ 1295 0086 756E7369 		.ascii	"unsigned char\000"
+ 1295      676E6564 
+ 1295      20636861 
+ 1295      7200
+ 1296              	.LASF13:
+ 1297 0094 646F7562 		.ascii	"double\000"
+ 1297      6C6500
+ 1298              	.LASF20:
+ 1299 009b 706F696E 		.ascii	"point_location\000"
+ 1299      745F6C6F 
+ 1299      63617469 
+ 1299      6F6E00
+ 1300              	.LASF37:
+ 1301 00aa 6D61696E 		.ascii	"main\000"
+ 1301      00
+ 1302              	.LASF30:
+ 1303 00af 50696E5F 		.ascii	"Pin_C_Write\000"
+ 1303      435F5772 
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 26
+
+
+ 1303      69746500 
+ 1304              	.LASF10:
+ 1305 00bb 75696E74 		.ascii	"uint16\000"
+ 1305      313600
+ 1306              	.LASF17:
+ 1307 00c2 6973725F 		.ascii	"isr_100Hz\000"
+ 1307      31303048 
+ 1307      7A00
+ 1308              	.LASF8:
+ 1309 00cc 756E7369 		.ascii	"unsigned int\000"
+ 1309      676E6564 
+ 1309      20696E74 
+ 1309      00
+ 1310              	.LASF7:
+ 1311 00d9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1311      206C6F6E 
+ 1311      6720756E 
+ 1311      7369676E 
+ 1311      65642069 
+ 1312              	.LASF32:
+ 1313 00f0 5350494D 		.ascii	"SPIM_Start\000"
+ 1313      5F537461 
+ 1313      727400
+ 1314              	.LASF36:
+ 1315 00fb 433A5C55 		.ascii	"C:\\Users\\rad1an\\Downloads\\psoc-1-opyr_husiev\\L"
+ 1315      73657273 
+ 1315      5C726164 
+ 1315      31616E5C 
+ 1315      446F776E 
+ 1316 0129 61625F32 		.ascii	"ab_2_7SEG.cydsn\000"
+ 1316      5F375345 
+ 1316      472E6379 
+ 1316      64736E00 
+ 1317              	.LASF34:
+ 1318 0139 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1318      43313120 
+ 1318      352E342E 
+ 1318      31203230 
+ 1318      31363036 
+ 1319 016c 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1319      20726576 
+ 1319      6973696F 
+ 1319      6E203233 
+ 1319      37373135 
+ 1320 019f 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1320      66756E63 
+ 1320      74696F6E 
+ 1320      2D736563 
+ 1320      74696F6E 
+ 1321              	.LASF16:
+ 1322 01c7 73697A65 		.ascii	"sizetype\000"
+ 1322      74797065 
+ 1322      00
+ 1323              	.LASF26:
+ 1324 01d0 4D494E55 		.ascii	"MINUS\000"
+ 1324      5300
+ 1325              	.LASF6:
+ARM GAS  C:\Users\rad1an\AppData\Local\Temp\ccJUlmne.s 			page 27
+
+
+ 1326 01d6 6C6F6E67 		.ascii	"long long int\000"
+ 1326      206C6F6E 
+ 1326      6720696E 
+ 1326      7400
+ 1327              	.LASF35:
+ 1328 01e4 6D61696E 		.ascii	"main.c\000"
+ 1328      2E6300
+ 1329              	.LASF14:
+ 1330 01eb 63686172 		.ascii	"char\000"
+ 1330      00
+ 1331              	.LASF18:
+ 1332 01f0 6F757437 		.ascii	"out7seg\000"
+ 1332      73656700 
+ 1333              	.LASF2:
+ 1334 01f8 73686F72 		.ascii	"short int\000"
+ 1334      7420696E 
+ 1334      7400
+ 1335              	.LASF4:
+ 1336 0202 6C6F6E67 		.ascii	"long int\000"
+ 1336      20696E74 
+ 1336      00
+ 1337              	.LASF22:
+ 1338 020b 7369676E 		.ascii	"sign\000"
+ 1338      00
+ 1339              	.LASF15:
+ 1340 0210 6C6F6E67 		.ascii	"long double\000"
+ 1340      20646F75 
+ 1340      626C6500 
+ 1341              	.LASF0:
+ 1342 021c 7369676E 		.ascii	"signed char\000"
+ 1342      65642063 
+ 1342      68617200 
+ 1343              	.LASF29:
+ 1344 0228 50696E5F 		.ascii	"Pin_B_Write\000"
+ 1344      425F5772 
+ 1344      69746500 
+ 1345              	.LASF31:
+ 1346 0234 43794465 		.ascii	"CyDelay\000"
+ 1346      6C617900 
+ 1347              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

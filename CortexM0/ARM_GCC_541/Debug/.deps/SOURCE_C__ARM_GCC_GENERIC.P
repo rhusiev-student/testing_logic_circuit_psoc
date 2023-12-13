@@ -1,0 +1,184 @@
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Clock_1.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Clock_1.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Clock_1.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Clock_1.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Clock_1.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Cm0Start.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Cm0Start.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/cyapicallbacks.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Cm0Start.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/cyapicallbacks.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/CyDMA.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyDMA.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyDMA.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyDMA.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyDMA.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/CyFlash.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyFlash.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyFlash.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyFlash.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/CyLFClk.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/CyLib.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_A.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A_aliases.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_A_PM.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A_PM.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A_PM.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_B.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B_aliases.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_B_PM.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B_PM.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B_PM.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_C.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C_aliases.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_C_PM.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C_PM.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C_PM.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_SPI_MOSI.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI_aliases.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_SPI_MOSI_PM.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI_PM.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI_PM.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_SPI_SCLK.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK_aliases.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_SPI_SCLK_PM.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK_PM.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK_PM.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_SPI_SS.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS_aliases.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/Pin_SPI_SS_PM.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS_PM.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS_PM.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/SPIM.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_IntClock.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_PVT.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_IntClock.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_PVT.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/SPIM_INT.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_INT.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_IntClock.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_PVT.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/cyapicallbacks.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_INT.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/SPIM_IntClock.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_IntClock.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_IntClock.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_IntClock.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/SPIM_PM.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_IntClock.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_PM.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_PVT.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_PM.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/cyPm.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyPm.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyPm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyPm.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyPm.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/cy_em_eeprom.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cy_em_eeprom.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cy_em_eeprom.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/cyfitter_cfg.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/cyapicallbacks.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/cyutils.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyutils.c 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyutils.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/isr_100Hz.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/isr_100Hz.c C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/isr_100Hz.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/cyapicallbacks.h 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/isr_100Hz.c : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/isr_100Hz.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/CortexM0/ARM_GCC_541/Debug/main.o : C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cmsis_armcc.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cmsis_compiler.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cmsis_gcc.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/core_cm0.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydisabledsheets.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/project.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Clock_1.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyDMA.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLFClk.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_A_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_B_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_C_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_MOSI_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SCLK_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/Pin_SPI_SS_aliases.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_IntClock.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/SPIM_PVT.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyPm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cy_em_eeprom.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/isr_100Hz.h C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/main.c 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cmsis_armcc.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cmsis_compiler.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cmsis_gcc.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/core_cm0.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/cydisabledsheets.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/Generated_Source/PSoC4/project.h : 
+
+C:/Users/rad1an/Downloads/psoc-1-opyr_husiev/Lab_2_7SEG.cydsn/main.c : 
+
